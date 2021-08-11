@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Ping Pong</title>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="flex-container">
+        <div class="buttons" id="add-button-one">+</div>
+        <div class="buttons" id="minus-button-one">-</div>
+      </div>
+      <div id="score-display-one">0</div>
+    </div>
+
+    <div id="pingpong-table">
+      <div class="table-half-top">
+        <div class="table-rect-one">
+          <img
+            class="paddle"
+            id="paddle-one"
+            src="./paddle.svg"
+            alt="paddle"
+            style="display: none"
+          />
+        </div>
+        <div class="table-rect-two"></div>
+      </div>
+
+      <div id="game-over">Game Over</div>
+
+      <div class="table-half-bottom">
+        <div class="table-rect-three"></div>
+        <div class="table-rect-four">
+          <img class="paddle" id="paddle-two" src="./paddle.svg" alt="paddle" />
+        </div>
+      </div>
+    </div>
+
+    <div class="flex-container">
+      <div id="score-display-two">0</div>
+      <div class="flex-container">
+        <div class="buttons" id="minus-button-two">-</div>
+        <div class="buttons" id="add-button-two">+</div>
+      </div>
+    </div>
+
+    <script src="/script.js"></script>
+  </body>
+</html>

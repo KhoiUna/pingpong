@@ -94,8 +94,10 @@ const checkPoints = () => {
   }
 
   if (
-    Number(scoreDisplayOne.innerText) === 11 ||
-    Number(scoreDisplayTwo.innerText) === 11
+    (Number(scoreDisplayOne.innerText) === 11 ||
+      Number(scoreDisplayTwo.innerText) === 11) &&
+    Number(scoreDisplayOne.innerText) < 10 &&
+    Number(scoreDisplayTwo.innerText) < 10
   ) {
     gameOver.style.display = "block";
   }
